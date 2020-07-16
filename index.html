@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+
+    <!-- SEO Title & Description -->
+    <title>Inova</title>
+    <meta
+      name="description"
+      value="For this business case, you will have to build a simple landing page to promote an eBook on our website."
+    />
+    <meta charset="UTF-8" />
+
+    <!-- Inova Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Inova basic styles -->
+    <!-- <link rel="stylesheet" href="inova.css" /> -->
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+    <!-- Font Awesome -->
+    <link
+      href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="https://www.inova-software.com/">
+        <svg
+          version="1.1"
+          id="header-logo-svg"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          x="0px"
+          y="0px"
+          viewBox="0 0 425.4 128.1"
+          style="enable-background: new 0 0 425.4 128.1;"
+          xml:space="preserve"
+        >
+          <path
+            class="st0"
+            d="M231.1,67c13.3-13.6,35.1-13.8,48.7-0.5c0.2,0.2,0.4,0.4,0.5,0.5c13.6,14.2,13.6,36.6,0,50.8
+          c-13.3,13.6-35.1,13.8-48.6,0.6c-0.2-0.2-0.4-0.4-0.6-0.6C217.5,103.6,217.5,81.2,231.1,67z M255.6,111.4c9.5,0,17.4-8.2,17.4-19.1
+          S265.1,73,255.6,73s-17.4,8.4-17.4,19.3S246.1,111.4,255.6,111.4L255.6,111.4z"
+          ></path>
+          <path
+            class="st0"
+            d="M327.2,95.5l13-38.8H358l-22.1,61.3c-2.4,6.8-6.3,10.2-11.9,10.2s-9.5-3.5-11.9-10.2l-22.2-61.3h17.8l13,38.8
+          c1.3,4.1,2.4,8.2,3.3,12.4C324.8,103.7,325.9,99.5,327.2,95.5z"
+          ></path>
+          <path class="st0" d="M122.5,56.6h16.9v71.5h-16.9V56.6z"></path>
+          <path
+            class="st0"
+            d="M206.8,68.8c-6-7.7-11.5-12-21.3-12c-8.4,0-13.3,3.3-17.2,8.7v-8.9h-16.9v71.5h16.9V85.7
+          c0.9-7.8,6.4-12.6,13.8-12.6c8.1,0,13.8,5.8,13.8,14.9v40.1h16.7V90.8C212.6,82,211.8,75.2,206.8,68.8z"
+          ></path>
+          <path
+            class="st0"
+            d="M207.1,68.5c-6-7.7-11.8-11.7-21.5-11.7c-8.4,0-13.3,3.3-17.2,8.7v-8.9h-16.9v71.5h16.9V85.7
+          c0.9-7.8,6.4-12.6,13.8-12.6c8.1,0,13.8,5.8,13.8,14.9v40.1h16.7V90.8C212.6,82,212.1,74.9,207.1,68.5z"
+          ></path>
+          <path
+            class="st0"
+            d="M425.4,92.4c0-3.2-0.4-6.3-1.2-9.4c-0.6-3-1.7-5.8-3.1-8.4c-0.2-0.3-0.4-0.6-0.6-0.8c-1.5-2.5-3.2-4.8-5.3-6.8
+          c-13.3-13.6-35.1-13.8-48.7-0.5c-0.2,0.2-0.4,0.4-0.5,0.5c-13.6,14.2-13.6,36.6,0,50.8c6.4,6.6,15.3,10.4,24.5,10.4
+          c6.6,0,12.7-3.1,18-7.2v7.2h16.9v-30c0-1.4,0-2.7,0-3.9C425.4,93.6,425.4,93,425.4,92.4z M390.5,111.4c-9.5,0-17.5-8.2-17.5-19.1
+          S381,73,390.5,73S408,81.3,408,92.3S400,111.4,390.5,111.4z"
+          ></path>
+          <path
+            class="st0"
+            d="M148.2,6.8c-8.2-8.2-21.2-9.1-30.4-2c-0.8,0.6-1.6,1.3-2.3,2.1c-4.4,4.3-6.8,10.1-6.7,16.3v11.6
+          c0,3.1-1.2,6-3.3,8.2c-2.2,2.2-4.9,1.7-8,1.7H39.5c-10.9,0-20.2,5.6-28,13.6S0,75.8,0,87.2c-0.2,10.8,4.1,21.3,11.7,28.9
+          c3.6,3.9,8,7,12.9,9.1c4.7,2,9.8,3,14.9,2.9c10.7,0.2,20.9-4.3,28.1-12.1c7.5-7.7,11.7-18.1,11.4-28.8V66.7
+          c-0.1-5.4,2-10.6,5.7-14.5c4-4,8.6-4.9,14.1-4.9h33c6.4,0,11.8-3.3,16.3-7.8c4.4-4.3,6.9-10.2,6.8-16.3C155.1,17,152.6,11,148.2,6.8
+          z M131.3,34c-5.5,0-10-4.6-9.9-10.1c-0.1-5.5,4.2-10,9.7-10.1c0.1,0,0.1,0,0.2,0c5.6,0,10.1,4.5,10.1,10.1S136.8,34,131.3,34z"
+          ></path>
+        </svg>
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div
+        class="collapse navbar-collapse ml-5 pl-5"
+        id="navbarSupportedContent"
+      >
+        <ul class="navbar-nav mr-auto ml-5">
+          <li class="nav-item ml-3 dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="https://www.inova-software.com/"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Products
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="https://www.inova-software.com/"
+                >Inova for Life Sciences</a
+              >
+              <a class="dropdown-item" href="https://www.inova-software.com/"
+                >Inova for Pharma</a
+              >
+              <a class="dropdown-item" href="https://www.inova-software.com/"
+                >Inova for Biotech</a
+              >
+              <a class="dropdown-item" href="https://www.inova-software.com/"
+                >Inova for Events</a
+              >
+              <a class="dropdown-item" href="https://www.inova-software.com/"
+                >Security & Performance</a
+              >
+            </div>
+          </li>
+
+          <li class="nav-item ml-3 dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="https://www.inova-software.com/"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Customers
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="https://www.inova-software.com/"
+                >Our customers</a
+              >
+              <a class="dropdown-item" href="https://www.inova-software.com/"
+                >Testimonials</a
+              >
+            </div>
+          </li>
+
+          <li class="nav-item ml-3 dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="https://www.inova-software.com/"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Events
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="https://www.inova-software.com/"
+                >All events</a
+              >
+              <a class="dropdown-item" href="https://www.inova-software.com/"
+                >Biopharma conferences</a
+              >
+              <a class="dropdown-item" href="https://www.inova-software.com/"
+                >Webinars</a
+              >
+              <a class="dropdown-item" href="https://www.inova-software.com/"
+                >Community Events</a
+              >
+            </div>
+          </li>
+
+          <li class="nav-item ml-3 dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="https://www.inova-software.com/"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Resources
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="https://www.inova-software.com/"
+                >All resources</a
+              >
+              <a class="dropdown-item" href="https://www.inova-software.com/"
+                >Blog</a
+              >
+            </div>
+          </li>
+
+          <li class="nav-item ml-3 dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="https://www.inova-software.com/"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              About
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="https://www.inova-software.com/"
+                >About us</a
+              >
+              <a class="dropdown-item" href="https://www.inova-software.com/"
+                >Join us</a
+              >
+              <a class="dropdown-item" href="https://www.inova-software.com/"
+                >Contact us</a
+              >
+            </div>
+          </li>
+        </ul>
+
+        <a href="https://www.inova-software.com/"
+          ><button id="btn-nav" class="btn" type="submit">
+            Request a Free Demo
+          </button></a
+        >
+      </div>
+    </nav>
+
+    <div id="row1">
+      <div id="col1">
+        <section>
+          <div class="small section">
+            <p id="supheadline">
+              <i class="fa fa-book" aria-hidden="true"></i> Whitepaper
+            </p>
+            <h1 class="smaller" id="headline">
+              15 Best Practices for Maximizing Your Partnering ROI at the BIO
+              International Convention
+            </h1>
+            <div class="white-box">
+              <p id="subheadline">
+                The BIO International Convention is the largest biopharma
+                partnering event of the year, attracting over 17,000 biopharma
+                leaders. For participating companies, the BIO Convention
+                represents an important investment in time, money and
+                resources.<br style="display: none;" />
+                <br style="display: none;" />
+                It is part of BIO’s mission to constantly improve the BIO
+                International Convention and keep it the best event for finding
+                partners. Inova Software joined this effort in 2014 by working
+                with BIO to redesign the BIO One-on-One Partnering™ system.<br
+                  style="display: none;"
+                />
+                <br style="display: none;" />
+                It was a natural step for Inova to develop the BIO One-on-One
+                Partnering™ System. For over 15 years, Inova has provided
+                software that helps life science companies better manage their
+                partnerships throughout the partnering lifecycle, from scouting
+                to business development to alliances.
+              </p>
+              <h4>
+                <a
+                  data-toggle="modal"
+                  data-target="#Modal"
+                  href="#Modal"
+                  class="action-link"
+                  >Make BIO 2020 your most successful year</a
+                >
+              </h4>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div
+        class="modal fade"
+        id="Modal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="ModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog" role="document">
+          <div class="modal-content m-5">
+            <div class="modal-header">
+              <h5 class="modal-title" id="ModalLabel">
+                Make BIO 2020 your most successful year!
+              </h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <h2>Please complete the form below</h2>
+                <div class="form-group">
+                  <label for="InputFirstName">First Name</label>
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="inputGroupPrepend"
+                        ><i class="fa fa-user-o fa-fw"></i
+                      ></span>
+                    </div>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="InputFirstName"
+                      placeholder="Your First Name"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="InputLastName">Last Name</label>
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="inputGroupPrepend"
+                        ><i class="fa fa-address-book-o fa-fw"></i
+                      ></span>
+                    </div>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="InputFirstName"
+                      placeholder="Your Last Name"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="InputCompany">Company</label>
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="inputGroupPrepend"
+                        ><i class="fa fa-building-o fa-fw"></i
+                      ></span>
+                    </div>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="InputLastName"
+                      placeholder="Your Company Name"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="InputEmail">Business Email</label>
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="inputGroupPrepend"
+                        ><i class="fa fa-envelope-o fa-fw"></i
+                      ></span>
+                    </div>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="InputEmail"
+                      placeholder="Your Email"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <p>
+                  Would you like the latest research on partnering, Inova
+                  product updates and events?
+                </p>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="Radios"
+                    id="Radios1"
+                    value="option1"
+                    checked
+                  />
+                  <label class="form-check-label" for="Radios1">
+                    Yes, please notify me of new biopharma partnering research
+                    and Inova product updates and events. I can unsubscribe at a
+                    later time.
+                  </label>
+                </div>
+
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="Radios"
+                    id="Radios2"
+                    value="option2"
+                  />
+                  <label class="form-check-label" for="Radios2">
+                    No, I do not want to be kept up-to-date.
+                  </label>
+                </div>
+                <br />
+                <button id="btn-nav" type="submit" class="btn btn-block">
+                  Download Whitepaper<i class="fa fa-download pl-2"></i>
+                </button>
+                <small id="agreement" class="form-text text-muted">
+                  <br />
+                  By submitting this form, you agree to the storing and
+                  processing of your personal data by Inova Software as detailed
+                  in the <a href="">Privacy Statement</a>.
+                </small>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="col2">
+        <a href="#Modal" data-toggle="modal" data-target="#Modal"
+          ><img
+            src="https://i.ibb.co/THS1JG4/bio-logo.png"
+            alt="bio-logo"
+            border="0"
+        /></a>
+
+        <button
+          type="button"
+          class="btn"
+          data-toggle="modal"
+          data-target="#Modal"
+        >
+          Get your Whitepaper here!
+        </button>
+      </div>
+    </div>
+
+    <div
+      id="carouselIndicators"
+      class="carousel slide m-2 p-5"
+      data-ride="carousel"
+    >
+      <ol class="carousel-indicators">
+        <li
+          data-target="#carouselIndicators"
+          data-slide-to="0"
+          class="active"
+        ></li>
+        <li data-target="#carouselIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="./couressel1.png" alt="First slide" />
+        </div>
+        <div class="carousel-item">
+          <img
+            class="d-block w-100"
+            src="./couressel2.png"
+            alt="Second slide"
+          />
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="./couressel3.png" alt="Third slide" />
+        </div>
+      </div>
+      <a
+        class="carousel-control-prev"
+        href="#carouselIndicators"
+        role="button"
+        data-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a
+        class="carousel-control-next"
+        href="#carouselIndicators"
+        role="button"
+        data-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+    <div id="row2">
+      <div id="col4">
+        <h2>About Inova</h2>
+      </div>
+      <div id="col3">
+        <p>
+          Inova Software accelerates partnering for the future of medicine. Our
+          cloud-based solutions help life science companies manage their
+          biopharma opportunities more efficiently. They find all their
+          partnering information in one place, track their deals and alliances
+          easily and report on their pipeline and activities in seconds.
+        </p>
+
+        <p></p>
+      </div>
+
+      <div id="col3">
+        <p>
+          We have also developed strategic partnerships that make data from the
+          20 biggest biopharma events automatically available in Inova,
+          providing our users with always up-to-date company and contact
+          information. Over 150 life science companies, including 50% of the top
+          50 pharmaceutical companies and many midsize pharma and innovative
+          biotechs already use Inova.
+        </p>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
