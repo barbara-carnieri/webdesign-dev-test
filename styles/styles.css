@@ -34,7 +34,6 @@ svg {
 @media (max-width: 768px) {
   #row1 {
     display: inline-block;
-    
   }
 
   #col2 {
@@ -45,10 +44,11 @@ svg {
     width: 60%;
   }
 
+  #col2 button {
+    top: 80% !important;
+    left: 30% !important;
+  }
 }
-
-
-
 
 #row2 {
   width: 100%;
@@ -83,7 +83,7 @@ svg {
   align-items: center;
   align-content: center;
   justify-content: center;
-  position: relative;
+  /* position: relative; */
 }
 
 #col3 {
@@ -113,11 +113,12 @@ svg {
   height: auto;
   margin-left: 3rem;
   margin-right: auto;
+  position: relative;
 }
 
 #col2 button{
  position: absolute;
- top: 65%;
+ top: 60%;
  left: 30%;
  color: white;
 }

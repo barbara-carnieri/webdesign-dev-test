@@ -7,7 +7,7 @@
   let subscription = false;
 
   document.querySelector('form').addEventListener('submit', function (e) {
-    e.preventDefault()
+    // e.preventDefault()
  
     firstName = e.target[0].value;
     lastName = e.target[1].value;
