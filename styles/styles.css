@@ -11,6 +11,7 @@ svg {
 
 .headline-highlight {
   background-color: rgb(159, 209, 231);
+  border-radius: 5px;
   font-weight: 800;
 }
 
@@ -110,14 +111,14 @@ svg {
 #col2 img{
   width: 80%;
   height: auto;
-  margin-left: 5rem;
+  margin-left: 3rem;
   margin-right: auto;
 }
 
 #col2 button{
  position: absolute;
- top: 62%;
- left: 35%;
+ top: 65%;
+ left: 30%;
  color: white;
 }
 
