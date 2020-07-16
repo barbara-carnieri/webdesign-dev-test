@@ -9,8 +9,17 @@ svg {
   fill: var(--primary-color);
 }
 
+.headline-highlight {
+  background-color: rgb(159, 209, 231);
+  font-weight: 800;
+}
+
 #supheadline {
   color: var(--third-color);
+}
+
+#subheadline {
+  text-align: justify;
 }
 
 #row1 {
@@ -20,6 +29,25 @@ svg {
   overflow: hidden;
   display: flex;
 }
+
+@media (max-width: 768px) {
+  #row1 {
+    display: inline-block;
+    
+  }
+
+  #col2 {
+    margin: 30px 0 0 0;
+  }
+
+  #col2 img{
+    width: 60%;
+  }
+
+}
+
+
+
 
 #row2 {
   width: 100%;
@@ -39,7 +67,6 @@ svg {
  }
 
 #col1 {
-  width: 50%;
   display: flex;
   align-items: center;
   align-content: center;
@@ -50,7 +77,6 @@ svg {
 }
 
 #col2 {
-  width: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -84,9 +110,8 @@ svg {
 #col2 img{
   width: 80%;
   height: auto;
-/* height: 25rem; */
-margin-left: 5rem;
-margin-right: auto;
+  margin-left: 5rem;
+  margin-right: auto;
 }
 
 #col2 button{
