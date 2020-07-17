@@ -4,6 +4,12 @@ h4 {
   text-align: center;
 }
 
+h5 {
+  background-color: var(--third-color);
+  border-radius: 5px;
+  padding: 10px;
+}
+
 svg {
   height: 30px;
   fill: var(--primary-color);
@@ -23,7 +29,7 @@ svg {
   text-align: justify;
 }
 
-#row1 {
+.row-geral {
   width: 100%;
   margin: 1rem;
   padding: 0;
@@ -31,80 +37,39 @@ svg {
   display: flex;
 }
 
-@media (max-width: 768px) {
-  #row1 {
-    display: inline-block;
-  }
-
-  #col2 {
-    margin: 30px 0 0 0;
-  }
-
-  #col2 img{
-    width: 60%;
-  }
-
-  #col2 button {
-    top: 80% !important;
-    left: 30% !important;
-  }
-}
-
-#row2 {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  display: flex;
-}
-
 #row2 h2{
- color: var(--primary-color);
-
+  color: var(--primary-color);
 }
 
 #row2 p{
   text-align: justify;
- }
+}
 
-#col1 {
+.col-geral {
   display: flex;
   align-items: center;
   align-content: center;
   justify-content: center;
+}
+
+#col1 {
   background: linear-gradient(60deg, rgb(94, 143, 207), rgb(0, 187, 240));
   border-radius: 15px 170px; 
   padding: 30px;
 }
 
 #col2 {
-  display: flex;
   flex-direction: column;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
-  /* position: relative; */
 }
 
 #col3 {
-  width: 40%;
-  display: flex;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
   border-radius: 15px 170px; 
   padding: 50px;
   color: #fff;
 }
 
 #col4 {
-  width: 20%;
-  display: flex;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
   border-radius: 15px 170px; 
-  
   color: #fff;
 }
 
@@ -117,10 +82,10 @@ svg {
 }
 
 #col2 button{
- position: absolute;
- top: 60%;
- left: 30%;
- color: white;
+  position: absolute;
+  top: 60%;
+  left: 30%;
+  color: white;
 }
 
 .white-box {
@@ -133,4 +98,81 @@ svg {
 
 #btn-nav {
   color: white;
+}
+
+/* Medias Queries */
+@media screen and (max-width: 1200px) {
+  #col2 .logo-btn {
+    top: 58%;
+    left: 30%;
+    font-size: 20px;
+    padding: 5px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #col2 .logo-btn {
+    top: 55%;
+    left: 30%;
+    width: 40%;
+    height: 50px;
+    font-size: 14px;
+    padding: 5px;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  #col2 .logo-btn {
+    top: 54%;
+    left: 33%;
+    width: 40%;
+    height: 50px;
+    font-size: 14px;
+    padding: 5px;
+  }
+
+  #row2 {
+    display: block !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #row1 {
+    display: inline-block;
+  }
+
+  #col2 {
+    margin: 30px 0 0 0;
+  }
+
+  #col2 img{
+    width: 60%;
+  }
+
+  #col2 .logo-btn {
+    top: 70%;
+    left: 19%;
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  #col2 .logo-btn {
+    top: 70%;
+    left: 22%;
+    font-size: 14px;
+    height: 35px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  #col2 .logo-btn {
+    top: 70%;
+    left: 36%;
+    font-size: 13px;
+  }
+
+  #col2 {
+    margin: 30px 0 0 0;
+  }
 }
